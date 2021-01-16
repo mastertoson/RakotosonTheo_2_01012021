@@ -1,0 +1,128 @@
+/* #region general */
+*{
+
+  font-family: 'raleway';
+  margin :auto ;
+}
+img{
+  width: 5vw;
+}
+a{
+  text-decoration:none;
+}
+
+/* #endregion general */
+
+/* #region header */
+
+#reservia_icon{
+  width: 10vw;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+/* #region nav */
+.nav{
+  display:flex;
+  border: solid 1px black;
+  width: 100%;
+  font-size: 1em;
+  justify-content: space-between;
+}
+.nav_button{
+  display: flex;
+  justify-self: flex-end;
+}
+.nav a{
+  padding: 0.2rem;
+}
+.nav_desktop_button{
+  display: none;
+}
+#sinscrire{
+  font-weight: bold;
+  color:rgb(0, 101, 252);
+}
+.nav_mobile{
+  display:flex;
+  
+  width: 100%;
+  font-size: 1em;
+  justify-content: space-around;
+  text-align: center;
+}
+.nav_mobile_button{
+  
+}
+#oui{
+  width: 50%;
+  border-bottom: solid 3px rgb(0, 101, 252);
+}
+#non{
+  width: 50%;
+  border-bottom: solid 3px rgb(242, 242, 242);
+}
+
+/* #endregion nav */
+#head{
+  
+}
+.text_header{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+}
+#recherche{
+  display: flex;
+  justify-content: center;
+}
+
+
+.search{
+  display:none;
+}
+
+
+/* #endregion header */
+
+
+/* #region body */
+body{
+  
+}
+#hebergement{
+  border: solid 1px black;
+}
+
+
+/* #endregion body */
+
+
+/* #region footer */
+
+/* #endregion footer */
+
+/* #region responsive */
+
+/* #region desktop */
+@media screen and (min-width:1024px )
+{
+  .nav_desktop_button
+  {
+    display: inherit;
+  }
+  .search{
+    display:inherit;
+  }
+}
+@media screen and (min-width:1024px )
+{
+  .nav_mobile
+  {
+    display:none;
+  }
+}
+/* #endregion desktop */
+
+/* #endregion responsive */
