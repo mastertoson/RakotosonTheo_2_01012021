@@ -19,58 +19,66 @@
       <div class="nav">
         <a href="index.html"><img id="reservia_icon" src="image/logo/Reservia.svg" alt="Reservia" title="Reservia"></a>
         <div class="nav_button">
-          <a class="nav_desktop_button"  href="#">Hébergement</a>
-          <a class="nav_desktop_button"  href="#">Activités</a>
+          <a class="nav_desktop_button" href="#">Hébergement</a>
+          <a class="nav_desktop_button" href="#">Activités</a>
           <a id="sinscrire" href="#">S'inscrire</a>
         </div>
       </div>
       <div class="nav_mobile">
-        <div id="oui"><a class="nav_mobile_button"  href="#">Hébergement</a></div>
-        <div id="non"><a class="nav_mobile_button"  href="#">Activités</a></div>
+        <div id="oui"><a class="nav_mobile_button" href="#">Hébergement</a></div>
+        <div id="non"><a class="nav_mobile_button" href="#">Activités</a></div>
       </div>
-      
+
 
     </nav>
-    
-    
+
+   
     <div id="head">
       <div class="text_header">
         <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
         <p>En plein centre ville ou en pleine nature</p>
       </div>
       <div id="recherche">
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="text">
+        <button type="submit" class="map"><i class="fas fa-map-marker-alt"></i></button>
+        <input type="text" class="champ_recherche">
         <input class="search" type="submit" value="Rechercher">
-        <a href="#" class="search_button"><i class="fas fa-search"></i></a>
+        <button type="submit" class="search_button"><i class="fas fa-search"></i></button>
       </div>
       <div id="filtres">
         <h3>Filtres</h3>
-        <div class="filtres">
-          <i class="fas fa-money-bill-wave"></i>
-          <p>Économique</p>
-        </div>
-        <div class="filtres">
-          <i class="fas fa-child"></i>
-          <p>Famillial</p>
-        </div>
-        <div class="filtres">
-          <i class="fas fa-heart"></i>
-          <p>Romantique</p>
-        </div>
-        <div class="filtres">
-          <i class="fas fa-dog"></i>
-          <p>Animaux autorisés</p>
-        </div>
+        <a href="#">
+          <div class="filtres_button">
+            <div class="filtres_icons"><i class="fas fa-money-bill-wave"></i></div>
+            <p>Économique</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="filtres_button">
+            <div class="filtres_icons"><i class="fas fa-child"></i></div>
+            <p>Famillial</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="filtres_button">
+            <div class="filtres_icons"><i class="fas fa-heart"></i></div>
+            <p>Romantique</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="filtres_button">
+            <div class="filtres_icons"><i class="fas fa-dog"></i></div>
+            <p>Animaux autorisés</p>
+          </div>
+        </a>
       </div>
-      <div id="500">
-        <i class="fas fa-info-circle"></i>
+      <div id="info">
+        <div id="circle"><i class="fas fa-info"></i></div>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </div>
 
   </header>
-
+ <section>
   <section id="hebergement">
     <h1>Hébergements à marseilles</h1>
     <div id="hebergement1">
@@ -203,7 +211,7 @@
 
     </div>
   </section>
-
+</section>
   <section id="activités">
     <h1>Activités à Marseille</h1>
     <div id="endroits">
