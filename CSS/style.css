@@ -348,22 +348,35 @@ footer ul {
   .nav_mobile {
     display: none;
   }
+  #recherche{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
   .search{
     background:  rgb(0, 101, 252);
     border-radius: 0px 20px 20px 0px;
-    
+    border: none;
     width: 100px;
-    height: 50px;
+    height: 54px;
     outline-style: none;
     color: white;
     font-weight: bolder;
   }
+  .champ_recherche{
+    width: 12%;
+  }
+
   #filtres{
     display: flex;
     
   }
-  #filtres_button{
-    display: flex;
+  .filtres_button{
+    margin-left:50px;
+    
+  }
+  .filtres_icons{
     
   }
 }
