@@ -1,8 +1,7 @@
 /* #region general */
 * {
   font-family: "raleway";
-  margin: 0;
-  padding: 0;
+ 
 }
 
 a {
@@ -267,9 +266,10 @@ body {
   border-radius: 20px 0px 0px 20px;
 }
 #hebergements_0 {
-  display: flex;
-  flex-direction: column-reverse;
+ display: flex;
+ flex-direction: column-reverse;
 }
+
 
 #endroits p {
   font-weight: bolder;
@@ -355,14 +355,17 @@ footer ul {
 
 /* #region desktop */
 @media screen and (min-width: 1024px) {
-  body{
-    padding-left: 2%;
+
+  #sinscrire:hover{
+    border-top: 1px solid blue;
   }
+  
   #head {
     padding:0;
   }
   #reservia_icon {
     width: 100%;
+    margin: 0;
   }
   .nav_desktop_button {
     display: inherit;
@@ -375,6 +378,9 @@ footer ul {
   }
   .nav_mobile {
     display: none;
+  }
+  #text_header{
+    
   }
   #recherche{
     display: flex;
@@ -393,7 +399,7 @@ footer ul {
     font-weight: bolder;
   }
   .champ_recherche{
-    width: 12%;
+    width: 13rem;
   }
   
   #filtres{
@@ -408,11 +414,56 @@ footer ul {
   .filtres_icons{
 
   }
-}
-@media screen and (min-width: 650px){
-  body{
-    padding-left: 2%;
+
+  #hebergement1{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 10px;
+    grid-template-areas: 
+    "text_hebergement . "
+    "case1 case1 case1"
+    "case1 case1 case1"
+    "afficher_plus_heberg afficher_plus_heberg afficher_plus_heberg";
   }
+  
+  #populaires{
+    border-radius: 20px;
+  }
+
+  #hebergements_0{
+    display:grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-template-areas: 
+    "hebergement1 populaires";
+  }
+  #hebergement{
+    background: rgb(242, 242, 242);
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 30px;
+  }
+  #hebergement1{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 10px;
+    grid-template-areas: 
+    "text_hebergement . "
+    "case1 case1 case1"
+    "case1 case1 case1"
+    "afficher_plus_heberg afficher_plus_heberg afficher_plus_heberg";
+  }
+  #afficher_plus_heberg{
+    margin-left: 0;
+  }
+  
+}
+/* #endregion desktop */
+
+/* #region tablette */
+@media screen and (min-width: 650px){
+  
   #sinscrire:hover{
     border-top: 1px solid blue;
   }
@@ -468,14 +519,14 @@ footer ul {
   .filtres_icons{
 
   }
+ 
 }
+
+/* #endregion tablette */
 @media screen and (max-width: 650px){
   #text_filtres{
     width: 100%;
   }
  
 }
-
-/* #endregion desktop */
-
 /* #endregion responsive */
