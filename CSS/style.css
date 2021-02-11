@@ -1,7 +1,13 @@
 /* #region general */
+@font-face{
+  font-family: "raleway", Arial, sans-serif;
+  src:url(../Font/Raleway-Regular.ttf);
+  src:url(../Font/Raleway-Bold.ttf);
+  src: url(../Font/Raleway-ExtraBold.ttf);
+}
 * {
-  font-family: "raleway";
- 
+
+  /* margin: 0; */
 }
 
 a {
@@ -366,16 +372,18 @@ body {
 footer li {
   list-style: none;
   padding-bottom: 5px;
+  
 }
 footer {
   background: rgb(242, 242, 242);
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: 20px;
   font-weight: 500;
+  
   
 }
 footer ul {
   padding-left: 0;
+  margin: 0;
 }
 footer a {
   color: black;
@@ -609,6 +617,7 @@ footer a {
 
   footer{
     display:flex;
+    
   }
   .footer{
     width: 30%;
@@ -691,8 +700,5 @@ footer a {
     width: 100%;
     padding:0rem;
   }
-
-
- 
 }
 /* #endregion responsive */
