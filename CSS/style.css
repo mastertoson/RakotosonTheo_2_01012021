@@ -1,9 +1,10 @@
 /* #region general */
 @font-face{
+  font-family: "raleway";
+  src:url(Font/Raleway-Regular.ttf);
+}
+*{
   font-family: "raleway", Arial, sans-serif;
-  src:url(../Font/Raleway-Regular.ttf);
-  src:url(../Font/Raleway-Bold.ttf);
-  src: url(../Font/Raleway-ExtraBold.ttf);
 }
 a {
   cursor: pointer;
@@ -27,6 +28,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  
 }
 
 .nav_button {
@@ -34,9 +36,6 @@ a {
   justify-self: flex-end;
 }
 
-.nav a {
-  padding: 0.2rem;
-}
 
 .nav_desktop_button {
   display: none;
@@ -54,40 +53,43 @@ a {
   font-size: 1em;
   justify-content: space-around;
   text-align: center;
-}
-
-.nav_mobile {
   margin-top: 20px;
 }
 
-#oui {
+
+
+#nav_hebergement {
   width: 50%;
-  border-bottom: solid 3px rgb(242, 242, 242);
+  border-bottom: solid 3px rgb(0, 101, 252);
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+#nav_hebergement a{
+  color: rgb(0, 101, 252);
 }
 
-#oui :active {
+#nav_hebergement :active {
   border-bottom: solid 3px rgb(0, 101, 252);
 }
 
-#non {
+#nav_activites {
   width: 50%;
   border-bottom: solid 3px rgb(242, 242, 242);
+  font-weight: bold;
+  padding-bottom: 15px;
 }
-
-#non :active {
+#nav_activites a{
+  color: black;
+}
+#nav_activites :active {
   border-bottom: solid 3px rgb(0, 101, 252);
+  color:rgb(0, 101, 252);
 }
 
 /* #endregion nav */
 #head {
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.text_header {
-  display: flex;
-  text-align: left;
-  flex-wrap: wrap;
 }
 
 #recherche {
@@ -106,7 +108,6 @@ a {
   border-radius: 20% 0% 0% 20%;
   text-align: center;
   font-size: 1.5em;
-
   outline-style: none;
 }
 
@@ -114,6 +115,9 @@ a {
   width: 80%;
   height: 50px;
   border: 1px solid rgb(242, 242, 242);
+  font-weight:bold;
+  font-size: 15px;
+  padding: 0 20px;
 }
 
 .search_button {
@@ -137,7 +141,6 @@ a {
 #filtres {
   display: flex;
   flex-wrap: wrap;
-  cursor: pointer;
   margin-top: 2rem;
 }
 
@@ -145,7 +148,8 @@ a {
   display: flex;
   align-items: center;
   font-weight: bold;
-  border: solid 2px rgb(242, 242, 242);
+  border: solid 2px rgb(218, 218, 218);
+  border-left: none;
   border-radius: 5rem;
   width:fit-content;
   max-width: 300px;
@@ -155,6 +159,7 @@ a {
   text-align: end;
   outline-style: none;
   color: black;
+  cursor: pointer;
 }
 
 .filtres_icons {
@@ -169,6 +174,7 @@ a {
   align-items: center;
   justify-content: center;
   outline-style: none;
+  
 }
 
 .filtres_text {
@@ -216,10 +222,11 @@ body {
   border-radius: 20px;
   background: white;
   width: 85%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
   padding: 5px;
   color: black;
+  
 }
 
 .img_hebergement {
@@ -230,7 +237,7 @@ body {
 }
 
 .nom_hebergement {
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 1.2em;
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
@@ -249,11 +256,11 @@ body {
 }
 
 .prix_bas {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 #afficher_plus_heberg {
-  font-weight: bolder;
+  font-weight: bold;
   align-self: flex-start;
   margin-left: 5vw;
 }
@@ -286,7 +293,7 @@ body {
   border-radius: 20px;
   background: white;
   width: 85%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
   padding: 5px;
   color: black;
@@ -307,7 +314,7 @@ body {
 
 
 #endroits p {
-  font-weight: bolder;
+  font-weight: bold;
   padding-left: 20px;
   padding-bottom: 20px;
 
@@ -317,7 +324,7 @@ body {
   border-radius: 20px;
   background: white;
   width: 85%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
   color: black;
 }
@@ -326,7 +333,7 @@ body {
   border-radius: 20px;
   background: white;
   width: 85%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
   color: black;
 }
@@ -335,7 +342,7 @@ body {
   border-radius: 20px;
   background: white;
   width: 85%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
   color: black;
 }
@@ -344,7 +351,7 @@ body {
   border-radius: 20px;
   background: white;
   width: 85%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
   color: black;
 }
@@ -436,7 +443,7 @@ footer a {
 /* #region responsive */
 
 /* #region desktop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
 
   #sinscrire:hover{
     border-top: 1px solid blue;
@@ -457,21 +464,69 @@ footer a {
     margin: 0;
   }
 
-  .nav_desktop_button {
-    display: inherit;
+  .nav{
+     margin-top: 0 ;
   }
 
+  .nav_desktop_button {
+    display: inherit;
+    padding: 2rem;
+    font-weight: bold;
+    color: black;
+  }
+
+
+  .nav_desktop_button:hover{
+    border-top:solid  3px rgb(0, 101, 252);
+    color: rgb(0, 101, 252);
+    
+  }
+
+  #nav_desktop_hebergement{
+    border-top:solid  3px rgb(0, 101, 252);
+    color: rgb(0, 101, 252);
+  }
+
+  #sinscrire{
+    padding:2rem;
+  }
+
+  #sinscrire:hover{
+    border-top:solid  3px rgb(0, 101, 252);
+  }
+  .map{
+    cursor: pointer;
+  }
   .search {
     display: inherit;
+    cursor: pointer;
   }
 
   .search_button {
     display: none;
   }
 
+ 
   .nav_mobile {
     display: none;
+
   }
+  .text_header{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #text_headerp{
+    margin-bottom:20px;
+    margin-top: 0;
+    
+  }
+  #text_headerh{
+    margin-bottom:10px;
+    font-size: 20px;
+    font-weight: 700;
+     
+   }
 
   #recherche{
     display: flex;
@@ -484,11 +539,12 @@ footer a {
     background:  rgb(0, 101, 252);
     border-radius: 0px 20px 20px 0px;
     border: none;
-    width: 100px;
-    height: 54px;
+    height: 52px;
     outline-style: none;
     color: white;
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0 20px;
   }
 
   .champ_recherche{
@@ -498,13 +554,20 @@ footer a {
   
   #filtres{
     display: flex;
-    
     flex-wrap: wrap;
   }
 
   .filtres_button{
     margin-left:20px;
-    
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .filtres_button:hover{
+    background:rgb(239, 244, 252);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   #hebergements_0{
@@ -601,6 +664,7 @@ footer a {
     margin-right: 80px ;
     margin-top: 50px;
     margin-bottom: 50px;
+    
   }
 
   #activites_text{
@@ -610,37 +674,37 @@ footer a {
   #endroits{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 30rem ;
+    grid-template-rows: 40rem ;
     gap: 0 3rem;
   }
 
   .case3{
     width: 100%;
     height: 100%;
-    max-height: 500px;
+    max-height: 550px;
     margin-bottom: 0;
   }
 
   .case4{
-    width: 100%;
+    width:100%;
     margin-bottom: 0;
-    height: 250px;
+    height: 300px;
   }
 
   .case5{
     width: 100%;
     margin-bottom: 0;
-    height: 180px;
-  }
-
-  .img_activites{
-    height: 89%;
+    height: 200px;
   }
 
   .case6{
     width: 100%;
     margin-bottom: 0;
-    height: 215px;
+    height: 250px;
+  }
+
+  .img_activites{
+    height: 89%;
   }
 
   #endroits p{
@@ -669,22 +733,22 @@ footer a {
 
   .img_activites_petit{
     height: 80%;
-    max-height: 195px
+    max-height: 290px
   }
 
   .img_activites_petit2{
     height: 85%;
-    max-height: 120px;
+    max-height: 140px;
   }
 
   .img_activites_petit3{
     height: 80%;
-    max-height: 160px;
+    max-height: 190px;
   }
 
   .img_activites_petit4{
     height: 80%;
-    max-height: 160px;
+    max-height: 190px;
   }
 
   footer{
@@ -709,7 +773,7 @@ footer a {
 /* #endregion desktop */
 
 /* #region tablette */
-@media screen and (min-width: 650px  max-width: 1024px){
+@media screen and (min-width: 650px  max-width: 1440px){
   
   #sinscrire:hover{
     border-top: 1px solid blue;
@@ -755,7 +819,7 @@ footer a {
     height: 54px;
     outline-style: none;
     color: white;
-    font-weight: bolder;
+    font-weight: bold;
   }
 
   #filtres{
@@ -769,9 +833,6 @@ footer a {
     
   }
 
-  .filtres_icons{
-
-  }
  
 }
 
