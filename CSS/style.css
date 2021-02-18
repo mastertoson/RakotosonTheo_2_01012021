@@ -3,9 +3,11 @@
   font-family: "raleway";
   src:url(Font/Raleway-Regular.ttf);
 }
+
 *{
   font-family: "raleway", Arial, sans-serif;
 }
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -28,7 +30,6 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  
 }
 
 .nav_button {
@@ -56,14 +57,13 @@ a {
   margin-top: 20px;
 }
 
-
-
 #nav_hebergement {
   width: 50%;
   border-bottom: solid 3px rgb(0, 101, 252);
   font-weight: bold;
   padding-bottom: 15px;
 }
+
 #nav_hebergement a{
   color: rgb(0, 101, 252);
 }
@@ -78,9 +78,11 @@ a {
   font-weight: bold;
   padding-bottom: 15px;
 }
+
 #nav_activites a{
   color: black;
 }
+
 #nav_activites :active {
   border-bottom: solid 3px rgb(0, 101, 252);
   color:rgb(0, 101, 252);
@@ -174,7 +176,6 @@ a {
   align-items: center;
   justify-content: center;
   outline-style: none;
-  
 }
 
 .filtres_text {
@@ -419,15 +420,12 @@ body {
 footer li {
   list-style: none;
   padding-bottom: 5px;
-  
 }
 
 footer {
   background: rgb(242, 242, 242);
   padding: 20px;
   font-weight: 500;
-  
-  
 }
 
 footer ul {
@@ -465,7 +463,7 @@ footer a {
   }
 
   .nav{
-     margin-top: 0 ;
+    margin-top: 0 ;
   }
 
   .nav_desktop_button {
@@ -479,7 +477,6 @@ footer a {
   .nav_desktop_button:hover{
     border-top:solid  3px rgb(0, 101, 252);
     color: rgb(0, 101, 252);
-    
   }
 
   #nav_desktop_hebergement{
@@ -509,24 +506,20 @@ footer a {
  
   .nav_mobile {
     display: none;
-
   }
   .text_header{
     display: flex;
     flex-direction: column;
-    
   }
   #text_headerp{
     margin-bottom:20px;
     margin-top: 0;
-    
   }
   #text_headerh{
     margin-bottom:10px;
     font-size: 20px;
     font-weight: 700;
-     
-   }
+  }
 
   #recherche{
     display: flex;
@@ -563,6 +556,7 @@ footer a {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
+
   .filtres_button:hover{
     background:rgb(239, 244, 252);
     -moz-transform: scale(1.1);
@@ -824,16 +818,12 @@ footer a {
 
   #filtres{
     display: flex;
-    
     flex-wrap: wrap;
   }
 
   .filtres_button{
     margin-left:20px;
-    
   }
-
- 
 }
 
 /* #endregion tablette */
